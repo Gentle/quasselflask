@@ -1,0 +1,7 @@
+Flask
+# for manage.py
+Flask-Script
+# for postgres
+psycopg2
+# 1.0 has broken reflection, require git version currently
+-e git+git://github.com/mitsuhiko/flask-sqlalchemy.git#egg=Flask-SQLAlchemy
