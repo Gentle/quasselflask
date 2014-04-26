@@ -5,13 +5,13 @@ from models import QuasselUser
 
 from main import db
 
-quassel = Blueprint('quassel', __name__, template_folder='templates')
+changepass = Blueprint('changepass', __name__, template_folder='templates')
 
 def crypt(password):
     s = sha.new(password)
     return s.hexdigest()
 
-@quassel.route('/', methods=['GET', 'POST'])
+@changepass.route('/', methods=['GET', 'POST'])
 def index():
     error1 = ""
     error2 = ""

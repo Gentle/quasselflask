@@ -9,5 +9,5 @@ app.config.from_envvar('QUASSELFLASK_SETTINGS')
 db = SQLAlchemy(app)
 db.reflect(app=app)
 
-from views import quassel
-app.register_blueprint(quassel)
+from views.changepass import changepass
+app.register_blueprint(changepass)
